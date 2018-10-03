@@ -11,6 +11,11 @@ import {
 } from './AdminSchema';
 
 import {
+    typeDef as Person,
+    resolver as PersonResolver
+} from './PersonSchema';
+
+import {
     typeDef as Role
 } from './RoleSchema';
 
@@ -24,5 +29,5 @@ const DefaultSchema = `
     }
 `;
 
-export const typeDefs = [DefaultSchema, Member, Role, Admin];
-export const resolvers = merge(MemberResolver, AdminResolver);
+export const typeDefs = [DefaultSchema, Member, Role, Admin, Person];
+export const resolvers = merge(MemberResolver, AdminResolver, PersonResolver);

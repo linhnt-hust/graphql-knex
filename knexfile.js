@@ -5,9 +5,9 @@ module.exports = {
       connection: {
         database: 'graphql',
         user:     'root',
-        password: 'root',
+        password: '',
         host: '127.0.0.1',
-        port: 8889
+        port: 3306
       },
       pool: {
         min: 2,
